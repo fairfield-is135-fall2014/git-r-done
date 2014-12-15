@@ -1,0 +1,47 @@
+body{
+  background-color: F8F8F8;
+  position: relative;
+} 
+
+#header h1{
+  color: #d11919;
+  text-align: center;
+  position: relative;
+  font-family: sans-serif;
+}
+
+#header h2{
+  padding-left: .4em;
+}
+
+#address{
+  color: white;
+}
+
+#classbusinessplan img{
+  float: right;
+  width: 500px;
+  height: 300px;
+  padding-left: 2em;
+  padding-right: 1em;
+}
+
+#section{
+  margin: 0em 1em 0em 1em;
+  }
+  
+footer{
+   background-color: 	#131212;
+}
+footer h5{
+  color: white;
+} 
+footer p{
+  color: white;
+}
+footer h3{
+  color: white;
+}
+label{
+  color: white;
+}

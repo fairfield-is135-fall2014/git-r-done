@@ -1,0 +1,42 @@
+body{
+  background-color: F8F8F8;
+  position: relative;
+} 
+
+#header h1{
+  color: #D11919;
+  text-align: center;
+  position: relative;
+  font-family: sans-serif;
+}
+
+#header h2{
+  padding-left: .5em;
+}
+#address{
+  color: white;
+}
+
+#content{
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#links{
+  padding-left: 2em;
+}
+footer{
+   background-color: 	#131212;
+}
+footer h5{
+  color: white;
+} 
+footer p{
+  color: white;
+}
+footer h3{
+  color:white;
+}
+label{
+  color: white;
+}

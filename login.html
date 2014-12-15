@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <title>Fairfield University Business Plan Competition</title>
-    <link rel="stylesheet" type="text/css" href="styles/register.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="styles/login.css" media="screen" />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     
@@ -12,7 +12,8 @@
     
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <title> Fairfield University Business Plan Competition</title>
+    
+  <title> Fairfield University Business Plan Competition</title>
   </head>
   <body>
     <header id="section-header" class="section section-header">
@@ -54,34 +55,48 @@
           </div>
         </div>
       </nav>
-   
     </header>
     
- <div id="header">  <h1><center>Fairfield University Business Plan Competition</center></h1>
-    
-<h2>Register</h2></div>
-<div id="section"><h3>Step 1: Create an account</h3>
-<p>In order to register you will need to create an account on the website. There are two ways to do it:</p>
-<ol>
-<li>The Easy Way: Log in with with an existing account
-<ul>
-<li><a href="http://is-dsb.fairfield.edu/fbp/hybridauth/window/LinkedIn?destination=registration">LinkedIn</a></li>
-<li><a href="http://is-dsb.fairfield.edu/fbp/hybridauth/window/Google?destination=registration">Google</a></li>
-<li><a href="http://is-dsb.fairfield.edu/fbp/hybridauth/window/Facebook?destination=registration">Facebook</a></li>
-</ul>
-</li>
+<!-------------------------------------------------------CONTENT HERE------------------------------------------------>  
+   
+<div id="header"> <h1><center>Fairfield University Business Plan Competition</center></h1> 
+<h2>User Account</h2></div>
+<div class="form">
+
+<div id="form"><form name="login">
+Username <input type="text" name="userid"/>
 <br>
-<li>The Hard Way: Request a username/password account
-<p>Contact us at businessplan@fairfield.edu and we will step you through the process. If you already have a username/password, then <a href="login.html">continue on to step 2.</a>
-<strong>Only use this method if you do not have a LinkedIn, Google+, or Facebook account.</strong></p>
-</li>
-</ol>
+<br>
+Password <input type="password" name="pswrd"/>
+<br>
+<br>
+<input type="button" onclick="check(this.form)" value="Login"/>
+<input type="reset" value="Cancel"/>
+</form></div>
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd")
+  {
+    window.open('target.html')/*opens the target page while Id & password matches*/
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
+}
+</script>
+<br>
+<div id="wrapper"><h2>Or Log In With</h2></div>
+<div id="section">
+<div class="wrapper">
+ <a href="http://www.linkedin.com/groups?gid=2130149" rel="nofollow" title="Linkedin" class="social-icon"><img src='images/linkedin.png' alt='' width=24 height=24></a>
+ <a href="https://www.facebook.com/FairfieldDSB" rel="nofollow" title="Facebook" class="social-icon"><img src='images/facebook.png' alt='' width=24 height=24></a>
+ <a href="http://is-dsb.fairfield.edu/fbp/hybridauth/window/Google?destination=%3Cfront%3E" rel="nofollow" title="Google"><img src='images/google.png' alt='' width=24 height=24></a></div>
 </div>
-
-<div id="img">
-<img src="images/gettingstarted.png"></div>
-
-<!--------------------FOOTER--------------------->
+  
+<!--------------------------FOOTER-------------------->
 <hr>
     <footer>
       <div class="container">
@@ -131,8 +146,9 @@
         </div></div></div>
         
         </div>
-    </div>    
+    </div>   
  <p>&copy; Aspromonte&Thaib 2014</p>
     </footer>
+    </div>
     </body>
     </html>
